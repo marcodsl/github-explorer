@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoriesViewController" customModule="GithubExplorer" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="0wc-jl-0Rk" id="Nbk-VK-s8b"/>
+                <outlet property="tableView" destination="nRM-s6-hMT" id="zl6-0N-Zvg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nRM-s6-hMT">
+                    <rect key="frame" x="0.0" y="95" width="390" height="715"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="0wc-jl-0Rk">
+                    <rect key="frame" x="8" y="44" width="374" height="51"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="nRM-s6-hMT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1sM-le-XJa"/>
+                <constraint firstItem="0wc-jl-0Rk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="A2q-ah-4vg"/>
+                <constraint firstItem="nRM-s6-hMT" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="EhA-uN-B8U"/>
+                <constraint firstItem="nRM-s6-hMT" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="GT0-pW-gN6"/>
+                <constraint firstItem="0wc-jl-0Rk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="foH-9F-sCl"/>
+                <constraint firstItem="0wc-jl-0Rk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-8" id="nHg-Pj-JoM"/>
+                <constraint firstItem="nRM-s6-hMT" firstAttribute="top" secondItem="0wc-jl-0Rk" secondAttribute="bottom" id="wtN-J2-HyY"/>
+            </constraints>
+            <point key="canvasLocation" x="138.46153846153845" y="113.74407582938387"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

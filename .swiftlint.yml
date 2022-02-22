@@ -1,0 +1,10 @@
+reporter: "xcode"
+
+excluded:
+  - Pods
+
+line_length:
+  warning: 120
+  ignores_function_declarations: true
+  ignores_urls: true
+  ignores_comments: true
